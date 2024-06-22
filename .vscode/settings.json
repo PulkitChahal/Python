@@ -1,4 +1,19 @@
 {
     "editor.fontSize": 12.5,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 100,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "sql_learnings",
+            "database": "sql_learnings",
+            "username": "root"
+        }
+    ]
 }
