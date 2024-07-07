@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Different Types of Forms</title>
+  </head>
+  <style></style>
+  <body>
+    <!-- Product Form -->
+    <!-- What data we need from users: Color, Size -->
+    <h2><u>T-Shirts</u></h2>
+    <div>
+      Red: <input type="radio" name="color" value="Red" /> Blue:
+      <input type="radio" name="color" value="Blue" /> Black:
+      <input type="radio" name="color" value="Black" />
+    </div>
+
+    <br />
+
+    <!-- Give User the option to select size -->
+    <div>
+      <select>
+        <option>Select Size :</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+      </select>
+    </div>
+
+    <br />
+
+    <!-- Feedback Form -->
+    <div>
+      <textarea
+        placeholder="What do you think about our product..."
+        rows="5"
+        cols="50"
+      >
+      </textarea>
+    </div>
+
+    <br />
+
+    <!-- Question -->
+    <div>
+      <label>Do you want us to send mails?</label>
+      <input type="checkbox" checked />
+    </div>
+
+    <br />
+
+    <!-- RailYatri Website -->
+    <!-- What data we need from user -->
+    <div>
+      <!-- Source Name -->
+      <div>
+        <label>Choose Source:</label>
+        <input list="source_cities" />
+        <datalist id="source_cities">
+          <option hidden>Select Source Station</option>
+          <option>Mumbai</option>
+          <option>Delhi</option>
+          <option>Kolkata</option>
+          <option>Chennai</option>
+          <option>Bangalore</option>
+          <option>Hyderabad</option>
+          <option>Pune</option>
+          <option>Ahmedabad</option>
+          <option>Surat</option>
+          <option>Jaipur</option>
+          <option>Lucknow</option>
+          <option>Bhopal</option>
+        </datalist>
+      </div>
+
+      <br />
+
+      <!-- Destination Name -->
+      <div>
+        <label>Choose Destination:</label>
+        <input list="source_cities" />
+        <datalist id="source_cities">
+          <option hidden>Select Source Station</option>
+          <option>Mumbai</option>
+          <option>Delhi</option>
+          <option>Kolkata</option>
+          <option>Chennai</option>
+          <option>Bangalore</option>
+          <option>Hyderabad</option>
+          <option>Pune</option>
+          <option>Ahmedabad</option>
+          <option>Surat</option>
+          <option>Jaipur</option>
+          <option>Lucknow</option>
+          <option>Bhopal</option>
+        </datalist>
+      </div>
+
+      <br />
+
+      <!-- Date of Travel -->
+      <div>
+        <input type="date" />
+      </div>
+
+      <br />
+
+      <div>
+        <input type="button" value="Submit" />
+      </div>
+    </div>
+  </body>
+</html>
