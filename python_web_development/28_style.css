@@ -1,0 +1,94 @@
+/* body{ */
+/* background-color: aqua; */
+/* } */
+
+* {
+  background-color: white;
+}
+
+/* class */
+.para3 {
+  color: red;
+}
+
+.para2 {
+  color: blue;
+}
+
+.para1 {
+  color: green;
+}
+
+/* id */
+#para1 {
+  color: green;
+}
+
+#para2 {
+  color: blue;
+}
+
+#para3 {
+  color: red;
+}
+
+/* class */
+.parent1 {
+    color: darkmagenta;
+}
+
+/* Combinators */
+/* Descendent combinator */
+.parent1 div{
+    color: blue;
+}
+
+.parent1 p{
+    background-color: aqua;
+}
+
+.parent1 div h3{
+    background-color: aquamarine;
+}
+
+/* Child combinator */
+.parent1 > div{
+    text-decoration: underline;
+}
+
+/* General sibling combinator -> select elemnts after p*/
+p ~ span {
+    color: red;
+}
+
+span ~ p {
+    color: burlywood;
+}
+
+
+/* Pseudo classes -> it does not exists but apply condition on it */
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Pseudo elements */
+p::first-letter{
+    font-size: 30px;
+    color: red;
+}
+
+/* Text Styling */
+p{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
