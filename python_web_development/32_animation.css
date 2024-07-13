@@ -1,0 +1,44 @@
+.ball {
+  /* Dimensions */
+  height: 100px;
+  width: 100px;
+
+  /* Background */
+  background-color: red;
+
+  /* Border */
+  border-radius: 100%;
+
+  /* Margin */
+  margin: 0 auto;
+  margin-top: 300px;
+
+  /* Animation */
+  animation: 1s alternate-reverse 0.5s infinite bounce;
+}
+
+@keyframes bounce {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 500px;
+    background-color: green;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    margin-top: 0px;
+  }
+  10% {
+    width: 300px;
+  }
+  50% {
+    margin-top: 600px;
+  }
+  100% {
+    margin-top: 500px;
+    background-color: green;
+  }
+}
