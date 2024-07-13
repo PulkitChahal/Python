@@ -1,0 +1,15 @@
+img{
+    height: auto;
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+    flex: 200px;
+}

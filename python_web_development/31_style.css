@@ -1,0 +1,29 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap:10px
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6{
+    /* margin: 10px; */
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: bisque;
+}
+
+.button{
+    width: 90%;
+    padding: 10px;
+
+    background-color: beige;
+    font-size: 1.3rem;
+
+    font-weight: bold;
+}

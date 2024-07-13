@@ -1,0 +1,28 @@
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;  
+  column-count: 3;
+}
+
+
+/* Add Media Query */
+
+@media(max-width:999px){
+    /* Apply CSS below width */
+    .images{
+        column-count: 2;
+    }
+}
+
+@media(max-width:550px){
+    /* Apply CSS below width */
+    .images{
+        column-count: 1;
+    }
+}
