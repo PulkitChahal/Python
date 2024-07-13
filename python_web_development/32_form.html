@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./32_form.css" type="text/css">
+  </head>
+  <body>
+
+    <!-- Name, email, password, date of birth, gender, submit button -->
+    <div class="formcontainer">
+        <div class="title">
+            <h2>Register</h2>
+        </div>
+      <div class="name">
+        <input
+          type="text"
+          class="name"
+          autocomplete="off"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="email">
+        <input type="email" class="email" placeholder="Email" required />
+      </div>
+      <div class="phonenumber">
+        <input
+          type="number"
+          class="phonenumber"
+          placeholder="Contact Number"
+          required
+        />
+      </div>
+      <div class="dob">
+        <input type="date" class="dob" placeholder="Date of Birth" required />
+      </div>
+      <div class="gender">
+        Male: <input type="radio" name="male" id="gender" required /> Female:
+        <input type="radio" name="female" id="gender" required />
+      </div>
+      <div class="password">
+        <input
+          type="password"
+          class="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <div class="re-password">
+        <input
+          type="password"
+          class="re-password"
+          placeholder="Confirm Password"
+          required
+        />
+      </div>
+      <div class="button">
+        <button>Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
