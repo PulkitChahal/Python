@@ -1,0 +1,19 @@
+.container, .jumbotron {
+background: red;
+color: white;
+margin-top: 60px;
+}
+
+body{
+background : yellow;
+color: red;
+}
+
+h1{
+text-align: center;
+}
+
+ul{
+gap:10px;
+font-size: 20px;
+}
