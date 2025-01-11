@@ -2,5 +2,8 @@
     "debug.terminal.clearBeforeReusing": true,
     "editor.defaultFormatter": "ms-python.python",
     "workbench.panel.defaultLocation": "top",
-    "vscode-edge-devtools.defaultUrl": "http://127.0.0.1:8000/"
+    "vscode-edge-devtools.defaultUrl": "http://127.0.0.1:8000/",
+    "[django-html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
