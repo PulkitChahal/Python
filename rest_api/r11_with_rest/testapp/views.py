@@ -10,7 +10,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 class EmployeeCRUDCBV(View):
-    def get(selfself, request, *args, **kwargs):
+    def get(self, request, *args, **kwargs):
         json_data = request.body
         stream = io.BytesIO(json_data)
         pdata = JSONParser().parse(stream)
