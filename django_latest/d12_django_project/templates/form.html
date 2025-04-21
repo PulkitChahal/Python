@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <form method='post' novalidate>
+        {% csrf_token %}
+        <table>
+            {{ form }}
+        </table>
+        <br>
+        <input type='submit' value='Submit'>
+    </form>
+    <br>
+
+    {{ form.as_table }}
+    <br>
+
+    {{ form.as_p }}
+    <br>
+
+    {{ form.as_ul }}
+    <br>
+
+    {{ form.non_field_errors }}
+    <br>
+
+    <form method='get'>
+        <table>
+            Name: {{ form.name }}<br><br>
+            Marks: {{ form.marks }}<br><br>
+            Email: {{ form.mailid }}<br><br>
+            Address: {{ form.address }}<br><br>
+        </table>
+        <br>
+        <input type='submit' value='Submit'>
+    </form>
+    <br>
+
+</body>
+</html>

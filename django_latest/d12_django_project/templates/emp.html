@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="{% static 'css\sample.css' %}" rel="stylesheet">
+    <script src="{% static 'javascript\script.js' %}"></script>
+</head>
+<body>
+    <h2 style='color:red'>
+        Id: {{eid}}<br>
+        Name: {{ename}}<br>
+        Address: {{eaddress}}<br>
+        Designation: {{designation}}<br>
+        Salary: {{salary}}<br>
+        Age: {{age}}<br>
+    </h2>
+
+    <table border='1' style='background-color:yellow'>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Designation</th>
+            <th>Salary</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>{{eid}}</td>
+            <td>{{ename}}</td>
+            <td>{{eaddress}}</td>
+            <td>{{designation}}</td>
+            <td>{{salary}}</td>
+            <td>{{age}}</td>
+        </tr>
+    </table>
+</body>
+</html>

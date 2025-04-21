@@ -1,1 +1,9 @@
 python_fundamentals/__pycache__/durgamath.cpython-311.pyc
+.idea
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.xml
