@@ -1,0 +1,1 @@
+alert('Working with Static Files');

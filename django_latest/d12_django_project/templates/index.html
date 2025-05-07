@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "base.html" %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    {% comment %} <link href="{% static 'css\sample.css' %}" rel="stylesheet"> {% endcomment %}
+    {% comment %} <script src="{% static 'javascript\script.js' %}"></script> {% endcomment %}
+</head>
+<body>
+
+    <h1>Home</h1>
+    <h2>Home</h2>
+
+    {% comment %} <img src="{% static 'images\1.png' %}" alt="cannot display image"> {% endcomment %}
+   {% block content %}
+
+    <h1>{{ dt }}<br>
+        {{ dt |date:'DATE_FORMAT'}}<br>
+        {{ dt |date:'TIME_FORMAT'}}<br>
+        {{ dt |date:'SHORT_DATETIME_FORMAT'}}<br>
+        {{ dt |date:'SHORT_DATE_FORMAT'}}<br>
+        {{ dt |date:'YEAR_MONTH_FORMAT'}}<br>
+        {{ dt |date:'MONTH_DAY_FORMAT'}}<br>
+    </h1>
+
+    {% endblock %}
+</body>
+</html>
