@@ -1,10 +1,21 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Template Filter</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-$END$
+{% for r in data_list %}
+<ul>
+    <li>{{ r.name | add:' Private Limited' }}</li>
+    <li>{{ r.subject | lower }}</li>
+    <li>{{ r.dept | title }}</li>
+    <li>{{ r.date | date:'Y-m-d' }}</li>
+</ul>
+<hr>
+{% endfor %}
+
 </body>
 </html>

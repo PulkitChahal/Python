@@ -1,6 +1,6 @@
 import os
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dbproject.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'd060_jobPortal.settings')
 import django
 
 django.setup()
@@ -29,10 +29,10 @@ def populate(n):
         faddress = fake.address()
         femail = fake.email()
         fphone_number = phone_number_gen()
-        hydjobs_record = HyderabadJobs.objects.get_or_create(date=fdate, company=fcompany, title=ftitle,
+        jobs_record = HyderabadJobs.objects.get_or_create(date=fdate, company=fcompany, title=ftitle,
                                                              eligibility=feligibility, address=faddress, email=femail,
                                                              phone_number=fphone_number)
+        print(jobs_record)
 
 
 populate(25)
-print(populate(25))

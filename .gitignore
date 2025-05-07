@@ -1,1 +1,7 @@
 python_fundamentals/__pycache__/durgamath.cpython-311.pyc
+
+__pycache__/
+.idea/
+*.xml
+*.iml
+.ipynb_checkpoints/

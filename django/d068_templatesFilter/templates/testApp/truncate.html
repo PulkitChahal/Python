@@ -1,10 +1,22 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Template Filter</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-$END$
+{% load cust_filters %}
+{% for r in data_list %}
+<ul>
+    <li>{{ r.name | t_n:2 }}</li>
+    <li>{{ r.subject | truncatechars:3 }}</li>
+    <li>{{ r.dept | truncate5 }}</li>
+    <li>{{ r.date | timesince }}</li>
+</ul>
+<hr>
+{% endfor %}
+
 </body>
 </html>

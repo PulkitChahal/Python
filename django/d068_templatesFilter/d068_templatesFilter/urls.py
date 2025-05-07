@@ -17,7 +17,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from testApp import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("upper/", views.upper_view),
+    path("lower/", views.lower_view),
+    path("truncate/", views.truncate_view),
 ]

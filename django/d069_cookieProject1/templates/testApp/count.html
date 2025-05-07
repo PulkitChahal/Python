@@ -1,10 +1,19 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        span{
+        font-size: 50px;
+        color:red;
+        }
+    </style>
 </head>
 <body>
-$END$
+<h1>Page Count is : <span>{{ count }}</span></h1>
+
 </body>
 </html>
